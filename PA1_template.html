@@ -218,8 +218,10 @@ n</code></pre>
 </div>
 <div id="fill-the-missing-value-with-mean-of-5-minute-interval" class="section level3">
 <h3>2-3. fill the missing value with mean of 5-minute interval</h3>
-<pre class="r"><code>#use the mean of 5-minutes interval to fill the missing value
-Newdata&lt;-data
+</div>
+<div id="use-the-mean-of-5-minutes-interval-to-fill-the-missing-value" class="section level3">
+<h3>use the mean of 5-minutes interval to fill the missing value</h3>
+<pre class="r"><code>Newdata&lt;-data
 Newdata$steps[is.na(data$steps)]&lt;-ave_intersteps[is.na(data$steps)]</code></pre>
 </div>
 <div id="make-a-histogram-of-the-total-number-of-steps-taken-each-day-and-calculate-and-report-the-mean-and-median-total-number-of-steps-taken-per-day." class="section level3">

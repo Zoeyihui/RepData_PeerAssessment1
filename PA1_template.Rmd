@@ -2,7 +2,7 @@
 title: "peer assignment1"
 author: "Zuo Yihui"
 date: "Thursday, July 16, 2015"
-output: html_document
+output: pdf_document
 ---
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
@@ -50,8 +50,8 @@ n<-length(data$steps[is.na(data$steps)])
 n
 ```
 ### 2-3. fill the missing value with mean of 5-minute interval
+###use the mean of 5-minutes interval to fill the missing value
 ```{r,echo=TRUE}
-#use the mean of 5-minutes interval to fill the missing value
 Newdata<-data
 Newdata$steps[is.na(data$steps)]<-ave_intersteps[is.na(data$steps)]
 ```
